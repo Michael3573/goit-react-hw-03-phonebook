@@ -1,28 +1,28 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
 
 class ContactForm extends Component {
   state = {
-    name: "",
-    number: "",
+    name: '',
+    number: '',
   };
 
-  handleNameChange = (e) => {
+  handleNameChange = e => {
     this.setState({ name: e.target.value });
   };
 
-  handleNumberChange = (e) => {
+  handleNumberChange = e => {
     this.setState({ number: e.target.value });
   };
 
-  handleSubmit = (e) => {
+  handleSubmit = e => {
     e.preventDefault();
     this.props.onSubmit(this.state.name, this.state.number);
-    this.setState({ name: "", number: "" });
+    this.setState({ name: '', number: '' });
   };
 
   render() {
     return (
-      <form className="form" onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit}>
         <input
           className="form"
           type="text"

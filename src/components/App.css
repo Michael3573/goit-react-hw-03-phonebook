@@ -1,7 +1,17 @@
-ul {
-  list-style: none;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
 }
 
+ul {
+  margin: 0;
+  padding-left: 0;
+}
 .container {
   width: 500px;
   margin-left: auto;
@@ -41,8 +51,9 @@ ul {
   border-bottom: 1px solid gray;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 8px;
   color: #f3f1f1;
+  vertical-align: bottom;
+  align-items: flex-end;
 }
 
 .contact-list {
@@ -60,6 +71,7 @@ ul {
   padding-left: 17px;
   padding-right: 17px;
   border-radius: 5px;
+  margin-bottom: 3px;
 
   background-color: #a1378b;
   border: solid 1px;
@@ -82,10 +94,12 @@ ul {
   width: 300px;
   padding-top: 5px;
   padding-bottom: 5px;
+  margin-bottom: 20px;
 }
 
 .text {
+  margin-bottom: 20px;
   color: aliceblue;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Times New Roman', Times, serif;
   font-size: 35px;
 }
