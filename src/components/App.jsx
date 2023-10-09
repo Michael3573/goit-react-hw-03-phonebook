@@ -61,12 +61,6 @@ class App extends Component {
     this.setState({ filter: e.target.value });
   };
 
-  deleteContact = id => {
-    this.setState(prevState => ({
-      contacts: prevState.contacts.filter(contact => contact.id !== id),
-    }));
-  };
-
   render() {
     const { contacts, filter } = this.state;
     const filteredContacts = contacts.filter(contact =>
