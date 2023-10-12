@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import './App.css';
-import ContactForm from './ContactForm';
-import ContactList from './ContactList';
-import Filter from './Filter';
+import style from './App.module.css';
+import ContactForm from './ContactForm/ContactForm';
+import ContactList from './ContactList/ContactList';
+import Filter from './Filter/Filter';
 import { nanoid } from 'nanoid';
 
 class App extends Component {
@@ -68,8 +68,8 @@ class App extends Component {
     );
 
     return (
-      <div className="container">
-        <h1 className="text">Phonebook</h1>
+      <div className={style.container}>
+        <h1 className={style.text}>Phonebook</h1>
         <ContactForm onSubmit={this.addContact} />
         <h2 className="text">Contacts</h2>
         <Filter value={filter} onChange={this.handleFilterChange} />

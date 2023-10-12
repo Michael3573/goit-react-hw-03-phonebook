@@ -1,0 +1,40 @@
+.ContactList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+
+.phoneBook {
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  color: #f3f1f1;
+  vertical-align: bottom;
+  align-items: flex-end;
+}
+
+.delBtn {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 17px;
+  padding-right: 17px;
+  border-radius: 5px;
+  margin-bottom: 3px;
+
+  background-color: #a1378b;
+  border: solid 1px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  color: aliceblue;
+}
+
+.delBtn:active {
+  background-color: #aaa;
+}
+
+.addBtn:active {
+  background-color: #aaa;
+}
