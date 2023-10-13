@@ -71,7 +71,7 @@ class App extends Component {
       <div className={style.container}>
         <h1 className={style.text}>Phonebook</h1>
         <ContactForm onSubmit={this.addContact} />
-        <h2 className="text">Contacts</h2>
+        <h2 className={style.text}>Contacts</h2>
         <Filter value={filter} onChange={this.handleFilterChange} />
         <ContactList
           contacts={filteredContacts}
